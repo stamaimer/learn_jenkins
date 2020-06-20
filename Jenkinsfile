@@ -40,7 +40,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'build_so/*.*', fingerprint: true
+            archiveArtifacts artifacts: 'build_so/*', fingerprint: true
         }
         success {
             echo 'This will run only if successful'
