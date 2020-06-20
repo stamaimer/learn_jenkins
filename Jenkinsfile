@@ -19,6 +19,7 @@ pipeline {
                 sh 'g++ --version'
                 sh 'pwd'
                 sh 'ls'
+                sh 'ls ../'
             }
         }
         stage('build') {
