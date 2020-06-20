@@ -29,7 +29,7 @@ pipeline {
         }
         stage("tests") {
             steps {
-                sh 'echo tests'
+                sh './build_so/main'
             }
         }
         stage("deploy") {
